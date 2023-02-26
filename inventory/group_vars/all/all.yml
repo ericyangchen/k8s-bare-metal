@@ -9,7 +9,6 @@ bin_dir: /usr/local/bin
 ## but don't know about that address themselves.
 # access_ip: 1.1.1.1
 
-
 ## External LB example config
 ## apiserver_loadbalancer_domain_name: "elb.some.domain"
 # loadbalancer_apiserver:
@@ -93,7 +92,7 @@ no_proxy_exclude_workers: false
 # ignore_assert_errors: false
 
 ## The read-only port for the Kubelet to serve on with no authentication/authorization. Uncomment to enable.
-# kube_read_only_port: 10255
+kube_read_only_port: 10255
 
 ## Set true to download and cache container
 # download_container: true
