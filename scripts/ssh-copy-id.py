@@ -19,7 +19,7 @@ def push_key(user, ip, port, password):
 
     print(f"\tPushing to {user}@{ip}:{port}")
 
-    command = f"sshpass -p {password} ssh-copy-id -i {PUBLICKEY_FILE} {user}@{ip} -p {port}"
+    command = f"sshpass -p {password} ssh-copy-id -i {PUBLICKEY_FILE} -p {port} {user}@{ip}"
 
     output = subprocess.run(command, shell=True,
                             capture_output=True)
