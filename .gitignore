@@ -3,3 +3,5 @@
 
 shared-keys
 scripts/secrets.py
+
+inventory/credentials
